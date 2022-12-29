@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>입력태그 학습</title>
+</head>
+<body>
+    <form method="get">
+        <!--<input type="text" name="id" />
+    <input type="password" name="pass" />
+    <input type="submit" />-->
+
+        <input type="text" name="text" id="text01" value="텍스트" title="일반텍스트" /><br />
+        <input type="password" name="pass" id="pass01" value="이글자는안나와요" title="패스워드입력" /><br />
+        <input type="file" name="file" id="file01" title="파일선택" /><br />
+
+        <input type="checkbox" name="gender" id="male" value="M" /><label for="male">남자</label>
+        <input type="checkbox" name="gender" id="female" value="F" title="여자" />여자<br />
+
+        <input type="radio" name="sex" id="male" value="M" title="남자" />남자
+        <input type="radio" name="sex" id="female" value="F" title="여자" />여자<br />
+
+        <input type="hidden" name="factory_mode" value="SF774" />
+
+        <input type="image" src="https://via.placeholder.com/150x100" /><br />
+
+        <input type="color" name="favorite_color" /><br />
+        <input type="date" name="birthday" /><br />
+        <input type="datetime" name="currtime" /><br />
+        <input type="week" name="week" /><br />
+
+        <select name="sns" multiple="multiple">
+
+            <option value="fb">페이스북</option>
+            <option value="in">인스타그램</option>
+            <option value="tw">트위터</option>
+            <option value="tt">틱톡</option>
+
+        </select>
+
+        <br />
+        <!-- 버튼 -->
+        <input type="button" value="버튼" />
+        <input type="reset" value="리셋" />
+        <input type="submit" value="저장" />
+
+
+    </form>
+</body>
+</html>
