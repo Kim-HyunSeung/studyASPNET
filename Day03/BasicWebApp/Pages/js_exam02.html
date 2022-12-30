@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>자바스크립트학습2</title>
+    <script>
+        // 함수
+        function sq(x) {
+            return x * x; 
+        }
+
+        console.log(sq(9));
+
+        var sq2 = function (x) {
+            return x * x;
+        }
+
+        console.log(sq2(10));
+
+        // 콜백함수
+        function call10Times(cb) {
+            for (var i = 0; i < 5; i++) {
+                cb();
+            }
+        }
+
+        var callback = function () {
+            //alert('함수호출!!!');
+        }
+
+        call10Times(callback); // 함수호출
+
+        // 객체생성
+        var product = {
+            name: ' 7D 건조 망고', type: '당절임', 성분: '망고, 설탕, 메타중아황산나트륨, 치자황색소', oringin: 'Phillipines',price: 5000
+        };
+
+        console.log(product['name']);
+        console.log(product.price);
+
+        // for in
+        for (var item in product) {
+            console.log(item + '값 = ' + product[item]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

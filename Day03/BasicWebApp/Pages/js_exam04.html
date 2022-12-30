@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS 4 DOM</title>
+    <script>
+            window.onload = function () {
+                document.getElementById('header2').style.color = 'orange';
+                document.getElementById('header2').style.background = 'red';
+
+                var header2 = document.getElementById('header2');
+
+                header2.style.color = 'orange';
+                header2.style.background = 'red';
+                header2.innerHTML = '자바스크립트로 변경했어요!!!'
+
+                var headers = document.querySelectorAll('h1');
+
+                for (var i = 0; i < headers.length; i++) {
+                    var header = headers[i]; // h1객체를 하나만
+
+                    header.style.color = 'blue';
+                }
+            };
+    </script>
+</head>
+<body>
+    <h1 id="header1">Header1</h1>
+    <h2>Header2</h2>
+
+    <h1 id="header2">Title!!</h1>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery 학습2</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        // 페이지 로드후 실행
+        $(document).ready(function () {
+            // page div 조정
+            $('.page').css({
+                width: 400,
+                height: 300,
+            });
+
+            // 시각효과
+            $('input').click(function () {
+                $('.page').toggle(1000); // 2000ms = 2sec
+            });
+
+            // id box 기본디자인
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: '#ff0000',
+            }).animate({
+                width: 400,
+                height: 200,
+                opacity: 0.5
+            },2000);
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="Show" />
+    <div class="page">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <hr />
+    <div id="box"></div>
+</body>
+</html>

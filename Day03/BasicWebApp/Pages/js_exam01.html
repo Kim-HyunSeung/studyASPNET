@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>javascript 학습1</title>
+    <script>
+        // 한줄 주석
+        //alert("Hello, javascript!!");
+        console.log("이 메시지는 숨겨져있습니다.");
+
+        // 변수 var로 선언
+        var pi = 3.141592;
+        var radius = 10;
+        var area = pi * radius * radius;
+        console.log("원의 면적은 " + area + " 입니다.");
+
+        console.log(pi);
+
+        // if문
+        if (273 > 52) {
+            //alert("273 > 52 참입니다");
+        }
+
+        //alert('프로그램 종료');
+
+        // 현재 일시 표현
+        var date = new Date();
+        console.log(date);
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        var currDate = year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + sec;
+        console.log('현재시각 = ' + currDate);
+
+        if (hour < 12) {
+            console.log('오전입니다');
+        }
+        else {
+            console.log('오후입니다');
+        }
+
+        var array = [270, 3.141592, 'string', false, function () { console.log('hey'); },[1,2,3]];
+        console.log(array);
+
+        console.log(array[1]);
+
+        //while
+        var array2 = ['홍', '길', '동'];
+        var i = 0;
+        while (i < array2.length) {
+            console.log(array2[i]);
+            i++;
+        }
+
+        for (i = 0; i < array2.length; i++) {
+            console.log(i + '번째 : ' + array2[i]);
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+</body>
+</html>

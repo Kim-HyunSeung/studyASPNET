@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery 학습01</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일 적용
+            $('h1').css('background-color', 'green');
+            $('h1').css('color', 'black');
+
+            // script 객체 접근
+            var src = $('script').attr('src');
+            alert(src);
+
+            // body img태그 접근,조작
+            $('img').attr('src', 'https://via.placeholder.com/150');
+            $('img').attr('alt', '150x150 가상이미지');
+            $('img').attr('title', '150x150 이미지 구성');
+
+            // 위와 동일
+            $('img').attr({
+                alt: 'jQuery로 이미지 조작',
+                title: '변경 툴팁',
+                src: 'https://via.placeholder.com/200',
+            });
+
+            // jQuery 내 익명함수도 실행가능
+            $('img').attr({
+                alt: 'jQuery 조작2',
+                src: function (index) {
+                    var size = (index + 1) * 100;
+                    return 'https://via.placeholder.com/' + size + 'x100';
+                }
+            });
+
+            // box 클래스를 조작
+            $('.box').css('float', 'left');
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+            $('.box').css('margin', 10);
+            $('.box').css('background-color', 'red');
+            
+
+            // 글자조작
+            $('h1:nth-child(2n+1)').text('<ins>홀수 헤더</ins>');
+            $('h1:nth-child(2n)').html('<ins>짝수 헤더</ins>');
+
+            // 클래스 조작
+            $('#wird').css({
+                overflow: 'hidden',
+                width: 100,
+                height: 100,
+                background: 'orange',
+            }).on('mouseover', function () {
+                $(this).css('background', 'blue');
+                $(this).css('border-radius', 50);
+            }).on('mouseout', function () {
+                $(this).css('background', 'orange');
+                $(this).css('border-radius', 0);
+            });
+
+            // 클릭이벤트 1
+            $('button').click(function () {
+                alert('클릭');
+            });
+            // 클릭이벤트 2
+            $('button').on('click', function () {
+                alert('다른클릭!!');
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h1>Header 2</h1>
+    <h1>Header 3</h1>
+    <img />
+    <img />
+    <img />
+    <hr />
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="dot"></div>
+    <div class="box"></div>
+    <hr />
+    <div id="wird" onmouseout=""></div>
+
+    <button>클릭</button>
+</body>
+</html>
