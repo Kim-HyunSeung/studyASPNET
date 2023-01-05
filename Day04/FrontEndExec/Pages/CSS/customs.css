@@ -1,0 +1,277 @@
+﻿   /*  초기화 영역 스타일 */
+        * {
+            margin: 0px auto;
+            padding: 0;
+            font-family: 'Malgun Gothic', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        html {
+            background: #d8e6e6;
+        }
+  
+
+    /* 헤더영역 스타일*/
+   
+        #main-header {
+            height: 40px;
+            background: #faf7f7;
+            position: relative;
+        }
+
+        .search-form {
+            float: left;
+        }
+
+        .header-menu {
+            float: right;
+        }
+
+        .header-title {
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            left: 50%;
+            margin-left: -100px;
+            background: url('KakaoTalk_20230105_111556539.png');
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+   
+
+    /* 풀다운메뉴영역 스타일 */
+    
+        .outer-menu {
+            float: left;
+            width: 100px;
+            /*height: 200px;*/
+            line-height: 20px;
+            padding: 10px 0 0 0; /* 보기싫은 아래쪽 회색 여백 제거 */
+            position: relative;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            z-index: 9999; /* 이 영역을 화면 제일 앞으로 나오도록 */
+        }
+
+            .outer-menu:hover {
+                background: #e1dfdf;
+            }
+
+        .inner-menu {
+            display: none;
+            background: #ffffff;
+            margin-top: 10px;
+            width: 100%; /* outer-menu 100px 그대로 */
+            border-top: 1px solid #cccaca;
+            box-shadow: 0 2px 4px rgba(34, 25, 25, 0.5)
+        }
+
+            .inner-menu a {
+                display: block;
+                padding: 5px 10px;
+                z-index: 5000;
+            }
+
+                .inner-menu a:hover {
+                    background: #e1dfdf;
+                }
+    
+
+   /* <!-- 메인 네비게이션영역 스타일 -->*/
+    
+        #main-navigation {
+            height: 30px;
+            background: #faf7f7;
+            border-top: 1px solid #cfcaca;
+            box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.4);
+        }
+
+            #main-navigation > ul {
+                overflow: hidden; /* 내영역은 가로끝까지 다 차지 */
+                text-align: center;
+            }
+
+                #main-navigation > ul > li {
+                    display: inline;
+                    padding: 0 5px;
+                    line-height: 30px;
+                    font-size: 13px;
+                    color: #524d4d;
+                    text-shadow: 0 1px 1px white;
+                }
+
+                    #main-navigation > ul > li:hover {
+                        background: #e1dfdf;
+                        border-radius: 2px;
+                    }
+    
+
+    /*<!-- 검색 영역 스타일 -->*/
+    
+        .search-form {
+            height: 26px;
+            padding: 7px;
+        }
+
+        .input-search {
+            display: block;
+            float: left;
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 15px 0 0 15px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            width: 150px;
+            height: 24px;
+            padding: 0 0 0 10px;
+            font-size: 12px;
+            color: #555555;
+        }
+
+            .input-search:focus {
+                border-color: rgba(82, 168, 236, 0.8);
+                outline: 0;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            }
+
+        .input-submit {
+            display: inline-block;
+            float: left;
+            font-size: 12px;
+            width: 60px;
+            height: 24px;
+            border-radius: 0 15px 15px 0;
+            border: 1px solid #cccccc;
+            margin-left: -1px;
+            vertical-align: top;
+        }
+  
+
+   /* <!-- 페이퍼스타일 -->*/
+    
+        .paper {
+            width: 190px;
+            margin-top: 10px;
+            padding: 15px 15px 0;
+            font-size: 11px;
+            background: white;
+            box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+            border-radius: 5px;
+        }
+
+        .paper-content {
+            margin: 0 -15px;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #f2f0f0;
+            overflow: hidden;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .paper-desc {
+            margin: 10px 0;
+        }
+
+        .paper-link {
+            display: block;
+            float: left;
+        }
+
+        .paper-text {
+            float: left;
+            width: 150px;
+            margin-left: 10px;
+        }
+   
+
+
+    /*<!-- 메인 컨텐트 사이즈별 반응형 웹 -->*/
+    
+        #main-section {
+            width: 920px;
+            margin: 0 auto;
+        }
+        /* 세줄 */
+        @media (max-width: 919px) {
+            #main-section {
+                width: 690px;
+            }
+        }
+
+        /* 네줄 */
+        @media (min-width: 920px) and (max-width: 1149px) {
+            #main-section {
+                width: 920px;
+            }
+        }
+
+        /* 다섯줄 */
+        @media (min-width: 1150px) and (max-width: 1379px) {
+            #main-section {
+                width: 1150px;
+            }
+        }
+
+        /* 여섯줄 */
+        @media (min-width: 1380px) {
+            #main-section {
+                width: 1380px;
+            }
+        }
+    
+
+  /*  <!-- 라이트 박스 영역 스타일 -->*/
+  
+        #darken-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            display: none;
+            background: rgba(0, 0, 0, 0.7); /* 라이트박스외 배경을 까맣게 바꿈.*/
+            z-index: 10000; /* 화면 가장위에 나오도록 함*/
+            overflow-y: scroll;
+        }
+
+        #lightbox {
+            width: 700px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
+            text-align: center;
+        }
+
+        .user-information {
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .user-information-image {
+            float: left;
+            width: 70px;
+        }
+
+        .user-information-text {
+            float: right;
+            width: 620px;
+        }
+
+        .lightbox-splitter {
+            margin: 10px 0;
+        }
+    

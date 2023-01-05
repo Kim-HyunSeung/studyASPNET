@@ -22,7 +22,9 @@ ASP.NET Core 학습 리포지토리
    - jQuery
    
 ## 4일차
-- ASP.NET Core 시작
+1. 웹 기반기술 총복습
+   - 핀터레스트 스타일 프론트엔드 연습
+   - 소스
 
 ## 5일차
 - ASP.NET Core
