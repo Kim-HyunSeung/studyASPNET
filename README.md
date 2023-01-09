@@ -1,6 +1,8 @@
 # studyASPNET
 ASP.NET Core 학습 리포지토리
 
+[부트스트랩 주소 링크]https://getbootstrap.com/
+
 ## 1일차
 1. Git/Github Desktop 설정
 2. Visual studio(IDE) 개발 환경 설정
@@ -40,7 +42,14 @@ ASP.NET Core 학습 리포지토리
 1.  ASP.NET Core
 	- 기본개요
 	- 기본프로젝트
+	- 게시판 만들기 프로젝트 생성
   
-
+## 6일차
+1. ASP.NET Core
+   - 게시판 리스트
+   - 게시판 글 생성
+   - trumbowyg 에디터 추가
+   
+   
 
 
