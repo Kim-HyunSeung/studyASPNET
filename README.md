@@ -49,9 +49,9 @@ ASP.NET Core 학습 리포지토리
 ## 6일차
 1. ASP.NET Core
    - 게시판 리스트
-   - 게시판 글 생성
+   - 게시판 CRUD 완료
    - trumbowyg 에디터 추가
-   
+   - Bootstrap 적용
    
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
