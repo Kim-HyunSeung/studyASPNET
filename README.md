@@ -1,8 +1,8 @@
 # studyASPNET
 ASP.NET Core 학습 리포지토리
 
-[부트스트랩 주소 링크]https://getbootstrap.com/
-
+[부트스트랩 주소]https://getbootstrap.com/
+[Lorem ipsum 주소]https://en.wikipedia.org/wiki/Lorem_ipsum
 ## 1일차
 1. Git/Github Desktop 설정
 2. Visual studio(IDE) 개발 환경 설정
