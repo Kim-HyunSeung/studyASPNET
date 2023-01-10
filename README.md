@@ -8,7 +8,7 @@ ASP.NET Core 학습 리포지토리
 
 ## GitHub stats
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
-<img src="https://img.shields.io/badge/C#-239120?style=for-the-badge&logo=C Sharp&logoColor=white">
+
 ## 1일차
 1. Git/Github Desktop 설정
 2. Visual studio(IDE) 개발 환경 설정
