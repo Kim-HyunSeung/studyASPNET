@@ -8,7 +8,7 @@ ASP.NET Core 학습 리포지토리
 
 ## GitHub stats OR Using Tool
 
-<img src=("https://img.shields.io/badge/C#-239120?style=for-the-badge&logo=C#&logoColor=white")>
+[Using Tool](https://img.shields.io/badge/C#-239120?style=for-the-badge&logo=C#&logoColor=white)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
 
