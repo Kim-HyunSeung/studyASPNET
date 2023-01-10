@@ -5,6 +5,9 @@ ASP.NET Core 학습 리포지토리
 [부트스트랩 주소](https://getbootstrap.com/)
 
 [Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)
+
+
+
 ## 1일차
 1. Git/Github Desktop 설정
 2. Visual studio(IDE) 개발 환경 설정
@@ -55,3 +58,17 @@ ASP.NET Core 학습 리포지토리
    
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
+
+## 7일차
+1. ASP.NET Core
+   - 게시판 추가기능
+   - 페이징 기능
+   - 게시판 완성
+   
+2. 결과화면
+
+## 8일차
+1. ASP.NET Core
+   - 로그인 기능
+   - 로그인
+   - 세션관리   
