@@ -7,7 +7,7 @@ ASP.NET Core 학습 리포지토리
 [Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)
 
 ## GitHub stats
-<img src="https://img.shields.io/badge/C#-239120?style=for-the-badge&logo=C Sharp&logoColor=white">
+![로고](https://img.shields.io/badge/C#-239120?style=for-the-badge&logo=C Sharp&logoColor=white)
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
 
 ## 1일차
