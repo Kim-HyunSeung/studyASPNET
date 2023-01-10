@@ -17,3 +17,6 @@ body {
   margin-bottom: 60px;
 }
 
+.toast-bottom-center {
+    top: 5%;
+}

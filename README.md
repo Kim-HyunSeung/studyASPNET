@@ -64,13 +64,11 @@ ASP.NET Core 학습 리포지토리
    - 게시판 추가기능
    - 페이징 기능
    - 게시판 완성
-   
+   - 회원가입 진행 중
 2. 결과화면
-
-![게시판리스트](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/aspnet_scream01.png)
 
 ## 8일차
 1. ASP.NET Core
-   - 로그인 기능
+   - 회원가입 완료
    - 로그인
    - 세션관리   
