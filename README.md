@@ -6,7 +6,9 @@ ASP.NET Core 학습 리포지토리
 
 [Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)
 
+## GitHub stats
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
 
 ## 1일차
 1. Git/Github Desktop 설정
@@ -57,7 +59,6 @@ ASP.NET Core 학습 리포지토리
    - Bootstrap 적용
    
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kim-HyunSeung&show_icons=true&theme=radical)
 
 ## 7일차
 1. ASP.NET Core
