@@ -65,7 +65,7 @@ ASP.NET Core 학습 리포지토리
    - 페이징 기능
    - 게시판 완성
    
-2. 결과화면
+2. 결과화면 (ASP.NET Core - 게시판 추가기능 - 페이징 기능 - 게시판)
 
 ![게시판리스트](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/aspnet_scream02.png)
 ## 8일차
