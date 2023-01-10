@@ -68,12 +68,11 @@ ASP.NET Core 학습 리포지토리
    - 회원가입 진행 중
 2. 결과화면
 
-=======
    
 2. 결과화면 (ASP.NET Core - 게시판 추가기능 - 페이징 기능 - 게시판)
    - [게시판 소스](https://github.com/Kim-HyunSeung/studyASPNET/tree/main/Day07/BoardWebApp)
 ![게시판리스트](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/aspnet_scream02.png)
->>>>>>> 6e2003c5bab08ae24e1fb1242b588b09b9841879
+
 ## 8일차
 1. ASP.NET Core
    - 회원가입 완료
