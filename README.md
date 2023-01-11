@@ -69,7 +69,7 @@ ASP.NET Core 학습 리포지토리
 2. 결과화면
 
    
-2. 결과화면 (ASP.NET Core - 게시판 추가기능 - 페이징 기능 - 게시판)
+2. 게시판화면 (ASP.NET Core - 게시판 추가기능 - 페이징 기능 - 게시판)
    - [게시판 소스](https://github.com/Kim-HyunSeung/studyASPNET/tree/main/Day07/BoardWebApp)
 ![게시판리스트](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/aspnet_scream02.png)
 
@@ -77,4 +77,8 @@ ASP.NET Core 학습 리포지토리
 1. ASP.NET Core
    - 회원가입 완료
    - 로그인
-   - 세션관리   
+   - 세션관리 
+
+2. 결과화면   
+
+회원가입화면

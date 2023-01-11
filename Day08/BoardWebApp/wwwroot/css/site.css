@@ -1,0 +1,27 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.toast-bottom-center {
+    top: 5%;
+}
+
+.custom-login{
+    text-align:center!important;
+    margin:auto!important;
+}
