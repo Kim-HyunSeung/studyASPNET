@@ -85,9 +85,7 @@ ASP.NET Core 학습 리포지토리
 
 ![회원가입화면](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/html_screen03.png)
 
-3. 결과화면
-[소스](https://github.com/Kim-HyunSeung/studyASPNET/tree/main/Day08/BoardWebApp)
 
-템플릿적용화면
+템플릿적용화면[소스](https://github.com/Kim-HyunSeung/studyASPNET/tree/main/Day08/BoardWebApp)
 ![템플릿적용화면](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/html_screen04.png)
 
