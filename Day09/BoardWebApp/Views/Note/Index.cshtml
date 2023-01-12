@@ -1,0 +1,139 @@
+﻿@model IEnumerable<BoardWebApp.Models.Note>
+@*@{
+	ViewData["Title"] = "게시판";
+}*@
+@{
+	var startPage = ViewBag.StartPage;
+	var EndPage = ViewBag.EndPage;
+	var Page = ViewBag.Page;
+	var totalPage = ViewBag.TotalPage;
+}
+
+<partial name="_Notification" />
+
+<div class="container">
+	<div class="row pt-4">
+		<div class="col-10">
+			<h2 class="text-primary">게시판 리스트</h2>
+		</div>
+		<div class="col text-end">
+			@if (SignInManger.IsSignedIn(User))
+			{
+				<a asp-controller="Note" asp-action="Create" class="btn btn-primary btn-sm">
+					<i class="bi bi-file-earmark-plus"></i>
+					글생성
+				</a>
+			}
+		</div>
+	</div>
+</div>
+<div class="pt-4"></div>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<!-- 웹창에 테이블 칸이 생김-->
+					<thead>
+						<tr>
+							<th>@Html.DisplayNameFor(model => model.UserId)</th>
+							<th>@Html.DisplayNameFor(model => model.Name)</th>
+							<th>@Html.DisplayNameFor(model => model.Title)</th>
+							<th>@Html.DisplayNameFor(model => model.ReadCount)</th>
+							<th>@Html.DisplayNameFor(model => model.PostDate)</th>
+
+							<th>삭제</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td>@Html.DisplayFor(modelitem => item.UserId)</td>
+								<td>@Html.DisplayFor(modelitem => item.Name)</td>
+								<td>
+									<a asp-controller="Note" asp-action="Detail" asp-route-id="@item.Id" class="text-decoration-none">
+										@Html.DisplayFor(modelitem => item.Title)
+									</a>
+								</td>
+								<td>@Html.DisplayFor(modelitem => item.ReadCount)</td>
+								<td>@Html.DisplayFor(modelitem => item.PostDate)</td>
+
+								<td>
+									@if (SignInManger.IsSignedIn(User) && item.Name == User.Identity.Name)
+									{
+										<!-- 수정,상세,삭제 버튼-->
+
+										<a asp-controller="Note" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+											<i class="bi bi-trash3"></i>삭제
+										</a>
+									}
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<nav>
+				<ul class="pagination justify-content-center">
+
+
+					@if (startPage > 1) // 11페이지를 넘어가면 나옴
+					{
+						<li class="page-item"><a class="page-link" href="page=1">&laquo;</a></li>
+					}
+					else
+					{
+						<li class="page-item disabled"><a class="page-link" href="page=1">&laquo;</a></li>
+					}
+					@if (Page > 1) // 바로 앞 페이지로 이동
+					{
+						<li class="page-item"><a class="page-link" href="?page=@(Page-1)">&lt;</a></li>
+					}
+					else
+					{
+						<li class="page-item disabled"><a class="page-link" href="?page=@(Page-1)">&lt;</a></li>
+					}
+
+					@* 반복하면서 페이지 번호 출력 *@
+					@for (int icount = startPage; icount <= EndPage; icount++)
+					{
+						if (icount == Page)
+						{
+							<li class="page-item active"><a class="page-link" href="?page=@icount">@icount</a></li>
+						}
+						else
+						{
+							<li class="page-item"><a class="page-link" href="?page=@icount">@icount</a></li>
+						}
+					}
+					@if (Page < totalPage) //다음페이지로 이동
+					{
+						<li class="page-item"><a class="page-link" href="?page=@(Page+1)">&gt;</a></li>
+					}
+					else
+					{
+						<li class="page-item disabled"><a class="page-link" href="?page=@(Page+1)">&gt;</a></li>
+					}
+
+					@if (EndPage < totalPage)// 마지막페이지로 이동
+					{
+						<li class="page-item"><a class="page-link" href="?page=@totalPage">&raquo;</a></li>
+					}
+					else
+					{
+						<li class="page-item disabled"><a class="page-link" href="?page=@totalPage">&raquo;</a></li>
+					}
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,68 @@
+﻿@model BoardWebApp.Models.Note
+
+@{
+	ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+	<div class="row pt-4">
+		<div class="col-10">
+			<h2 class="text-primary">게시판 글수정</h2>
+		</div>
+		<div class="col text-end">
+		</div>
+	</div>
+</div>
+<div class="pt-4"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<form asp-action="Edit">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<div class="form-group">
+					<label asp-for="UserId" class="control-label"></label>
+					<input asp-for="UserId" class="form-control" />
+					<span asp-validation-for="UserId" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Name" class="control-label"></label>
+					<input asp-for="Name" class="form-control" />
+					<span asp-validation-for="Name" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Title" class="control-label"></label>
+					<input asp-for="Title" class="form-control" />
+					<span asp-validation-for="Title" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="Contents" class="control-label"></label>
+					<textarea asp-for="Contents" class="form-control editor" rows="10" placeholder="본문내용"></textarea>
+				</div>
+				<br />
+				<div class="form-group">
+					<button type="submit" value="수정" class="btn btn-primary btn-sm" >
+						<span class="bi-pencil-square"></span>
+						저장
+					</button>
+
+					<a asp-controller="Note" a asp-action="Index" class="btn btn-success btn-sm">
+						<i class="bi bi-list-ol"></i>
+						리스트
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

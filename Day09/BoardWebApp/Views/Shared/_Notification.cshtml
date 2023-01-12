@@ -1,0 +1,24 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!-- js가 실행되는 위치가 다르기 때문에 재추가.. -->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+@if (TempData["success"] != null)
+{
+	<script>
+		toastr.options.positionClass = "toast-bottom-center";
+		toastr.success('@TempData["success"]','성공메시지');
+	</script>
+}
+
+@if (TempData["error"] != null)
+{
+	<script>
+		toastr.error('@TempData["error"]', '오류메시지');
+	</script>
+}
+

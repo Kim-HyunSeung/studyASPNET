@@ -1,0 +1,64 @@
+﻿@model BoardWebApp.Models.RegisterModel
+
+@{
+	ViewData["Title"] = "Register";
+}
+<div class="mb-4"></div>
+<div class="text-center">
+	<img class="d-block mx-auto mb-2" src="https://image.ytn.co.kr/general/jpg/2022/0907/202209071036571860_d.jpg" alt="" width="250" height="200">
+	<h2 _msthash="705055" _msttexthash="21753199"></h2>
+</div>
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-3">
+			<h4 class="mb-3 text-center" >회원정보</h4>
+			<form asp-action="Register">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+				<div class="mb-3">
+					<label asp-for="UserName" class="control-label"></label>
+					<input asp-for="UserName" class="form-control" placeholder="아이디입력" />
+					<span asp-validation-for="UserName" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Email" class="control-label"></label>
+					<input asp-for="Email" class="form-control" placeholder="you@example.com"/>
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Password" class="control-label"></label>
+					<input asp-for="Password" class="form-control" />
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="ConfirmPassword" class="control-label"></label>
+					<input asp-for="ConfirmPassword" class="form-control" />
+					<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="PhoneNumber" class="control-label"></label><span class="text-muted">(옵션)</span>
+					<input asp-for="PhoneNumber" class="form-control" placeholder="010-1234-5678"/>
+			
+				</div>
+				<div class="mb-3">
+					<button type="submit" value="Create" class="btn btn-primary" >
+						<span class="bi bi-person-down"></span>
+						회원가입
+					</button>
+					<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+						<i class="bi bi-x-circle-fill"></i>
+						취소
+						</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

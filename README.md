@@ -88,3 +88,18 @@ ASP.NET Core 학습 리포지토리
 템플릿적용화면[소스](https://github.com/Kim-HyunSeung/studyASPNET/tree/main/Day08/BoardWebApp)
 ![템플릿적용화면](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/html_screen04.png)
 
+## 9일차
+1. ASP.NET Core
+   - Bootstrap 템플릿 적용 1차완료
+   - 로그인계정으로 글쓰기
+   - 메인페이지 DB연동
+   
+2. 개발화면
+
+
+## 10일차
+1. ASP.NET Core
+   - 마무리
+
+2. 개발화면   
+   
