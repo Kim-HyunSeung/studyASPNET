@@ -58,7 +58,7 @@
   
 ## 2일차
 1. 웹 기반기술
- - HTML 기본태그 
+ - [HTML 기본태그](https://github.com/Kim-HyunSeung/studyASPNET/tree/main/Day02/BasicWebApp)
  - CSS 전반학습
  
 ## 3일차
