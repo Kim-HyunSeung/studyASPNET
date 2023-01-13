@@ -7,7 +7,7 @@ ASP.NET Core 학습 리포지토리
 [Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)
 
 ## GitHub stats
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/apiKim-HyunSeung=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?Kim-HyunSeung=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 1일차
 1. Git/Github Desktop 설정
