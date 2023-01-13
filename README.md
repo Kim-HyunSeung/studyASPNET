@@ -21,6 +21,9 @@
 <h1><p align="center">
 [Using Language]</p></h1>
 
+[![hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fohbyul&count_bg=%237A7A7A&title_bg=%23FFADCC&icon=reverbnation.svg&icon_color=%23FF0000&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+![followers](https://img.shields.io/github/followers/ohbyul?style=social)
+
 <div align=center> 
 <img src="https://img.shields.io/badge/C Shap-3776AB?style=for-the-badge&logo=C Sharp&logoColor=white">
 <img src="https://img.shields.io/badge/MSSQL-CC2927?style=for-the-badge&logo=Microsoft SQL Server&logoColor=white">
