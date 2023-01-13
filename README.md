@@ -112,7 +112,7 @@ ASP.NET Core 학습 리포지토리
    - 메인화면 DB연동
    
 2. 개발화면
-
+![메인화면](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/%ED%99%88%ED%99%94%EB%A9%B4.png)
 
 
 메인화면
@@ -124,4 +124,4 @@ ASP.NET Core 학습 리포지토리
    - 전체 마무리
 
 2. 개발화면   
-   
+![역활화면](https://github.com/Kim-HyunSeung/studyASPNET/blob/main/images/%EC%97%AD%ED%99%9C%EA%B4%80%EB%A6%AC.png)   
