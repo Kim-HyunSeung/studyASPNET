@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BoardWebApp.Models.ProfileModel>;
+@{
+	ViewData["Title"] = "About";
+}
+
+<div class="container">
+	<div class="row pt-4">
+		<div class="col-10">
+			<h2 class="text-primary">Skill 소개</h2>
+		</div>
+	</div>
+</div>
+<div class="pt-4"></div>
+
+<!-- Card1 영역 -->
+	<div class="row gx-4 gx-lg-5 align-items-center my-5">
+	<div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Uploads/@Model.FirstOrDefault(x => x.Division == "Card1").FileName" alt="..." width="600" /></div>
+		<div class="col-lg-5">
+		<h1 class="font-weight-light">@Model.FirstOrDefault(x => x.Division == "Card1").Title</h1>
+		<p>@Html.Raw(@Model.FirstOrDefault(x => x.Division == "Card1").Description)</p>
+			<a class="btn btn-primary" href=@Model.FirstOrDefault(x => x.Division == "Card1").Url  target="_blank">Reference</a>
+		</div>
+	</div>
+
+	<!-- Card2 영역 -->
+	<div class="row gx-4 gx-lg-5 align-items-center my-5">
+	
+		<div class="col-lg-5">
+		<h1 class="font-weight-light">@Model.FirstOrDefault(x => x.Division == "Card2").Title</h1>
+		<p>@Html.Raw(@Model.FirstOrDefault(x => x.Division == "Card2").Description)</p>		
+			<a class="btn btn-primary" href=@Model.FirstOrDefault(x => x.Division == "Card2").Url  target="_blank">Reference</a>	
+		</div>
+	<div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Uploads/@Model.FirstOrDefault(x => x.Division == "Card2").FileName" alt="..." width="600" /></div>
+	</div>
+
+		<!-- Card3 영역 -->
+	<div class="row gx-4 gx-lg-5 align-items-center my-5">
+	<div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Uploads/@Model.FirstOrDefault(x => x.Division == "Card3").FileName" alt="..." width="600" /></div>
+		<div class="col-lg-5">
+		<h1 class="font-weight-light">@Model.FirstOrDefault(x => x.Division == "Card3").Title</h1>
+		<p>@Html.Raw(@Model.FirstOrDefault(x => x.Division == "Card3").Description)</p>
+			<a class="btn btn-primary" href=@Model.FirstOrDefault(x => x.Division == "Card3").Url  target="_blank">Reference</a>
+		</div>
+	</div>

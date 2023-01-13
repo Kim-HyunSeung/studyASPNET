@@ -1,0 +1,38 @@
+﻿@model BoardWebApp.Models.LoginModel
+
+@{
+	ViewData["Title"] = "Login";
+}
+<div class="mb-5"></div>
+</br>
+</br>
+<div class="container custom-login">
+	<div class="row justify-content-center">
+		<div class ="col-3">
+            <form asp-controller="Account" asp-action="Login">
+                <img class="d-block mx-auto mb-4" src="https://image.ytn.co.kr/general/jpg/2022/0907/202209071036571860_d.jpg" alt="" width="250" height="200">
+                <h1 class="h3 mb-3 fw-normal">로그인</h1>
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" asp-for="UserName" asp-asp-for="Id" placeholder="아이디">
+                    <label for="floatingInput">사용자 아이디</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" asp-for="Password" id="floatingPassword" placeholder="패스워드">
+                    <label for="floatingPassword">패스워드</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label asp-for="RememberMe">
+                        <input asp-for="RememberMe" type="checkbox">&nbsp;@Html.DisplayNameFor(m => m.RememberMe)   
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
+               
+            </form>
+		</div>
+	</div>
+</div>
+</br>
+</br>

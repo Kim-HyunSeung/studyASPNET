@@ -1,0 +1,55 @@
+﻿@model BoardWebApp.Models.TempProfile // Profile 모델 사용하면 안됨!!!
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Profile</h4>
+<hr />
+<div class="row">
+    <div class="col-md">
+        <form asp-action="Edit" asp-controller="Profile" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Division" class="control-label"></label>
+                <input asp-for="Division" class="form-control" placeholder="Top | Card1 | Card2 | Card3 중 선택" />
+                <span asp-validation-for="Division" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control editor" rows="5" placeholder="내용입력"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" placeholder="https://www.sample.com" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <input type="hidden" asp-for="FileName" />
+                <label asp-for="ProfileImage" class="control-label"></label>&nbsp;
+                <span class="text-secondary">업로드 파일 : @Model.FileName</span>
+                <input asp-for="ProfileImage" class="form-control" type="file" accept=".jpg, .png, .jpeg" />
+                <span asp-validation-for="ProfileImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="저장" class="btn btn-primary btn-sm" />
+                <a asp-action="Index" class="btn btn-sm btn-secondary">리스트</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,13 @@
+﻿@* Microsoft.AspNetCore.Identity 추가*@
+
+@using BoardWebApp
+@using BoardWebApp.Models
+@using Microsoft.AspNetCore.Identity @* 신규추가 2023-01-11*@
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*  회원가입, 로그인 화면표시 위해 추가하는 객체
+	여기 추가하면 각페이지에 넣을 필요없음!!
+*@
+@inject SignInManager<IdentityUser> SignInManger
+@inject UserManager<IdentityUser> userManger

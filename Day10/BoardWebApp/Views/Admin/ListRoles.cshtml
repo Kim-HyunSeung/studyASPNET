@@ -1,0 +1,64 @@
+﻿@model IEnumerable<IdentityRole>
+
+@using Microsoft.AspNetCore.Authorization
+
+@inject IAuthorizationService IAuthorizationService
+
+@{
+	ViewData["Title"] = "All Roles";
+}
+
+<h1>All Roles</h1>
+
+@if (Model.Any())
+{
+
+	<a class="btn btn-primary btn-sm mb-3" style="width:auto"
+   asp-controller="admin" asp-action="CreateRole">
+		 롤 추가
+	</a>
+
+	foreach (var role in Model)
+	{
+
+		<div class="card mb-3">
+			<div class="card-header">
+				Role Id : @role.Id
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">
+					@role.Name
+				</h5>
+			</div>
+			<div class="card-footer">
+				<form method="post" asp-action="DeleteRole" asp-route-id="@role.Id">
+					@*@if ((await IAuthorizationService.AuthorizeAsync(User, "EditRolePolicy")).Succeeded)
+					{*@
+						<a class="btn btn-primary btn-sm" asp-action="EditRole"
+			   asp-controller="Admin" asp-route-id="@role.Id">
+							롤 수정
+						</a>
+					@*}*@
+					<button type="submit" class="btn btn-danger btn-sm">삭제</button>
+				</form>
+			</div>
+		</div>
+	}
+}
+else
+{
+	<div class="card">
+		<div class="card-header">
+			No roles created yet
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">
+				Use the button below to create a role
+			</h5>
+			<a class="btn btn-primary btn-sm" style="width:auto"
+		   asp-controller="admin" asp-action="CreateRole">
+				롤 추가
+			</a>
+		</div>
+	</div>
+}

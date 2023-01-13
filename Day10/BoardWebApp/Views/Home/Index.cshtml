@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BoardWebApp.Models.ProfileModel>;
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<partial name="_Notification" />
+
+
+	<!-- Heading Row DB Top영역-->
+	<div class="row gx-4 gx-lg-5 align-items-center my-5">
+		<div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="/Uploads/@Model.FirstOrDefault(x => x.Division == "Top").FileName" alt="..." width="600"/></div>
+		<div class="col-lg-5">
+			<h1 class="font-weight-light">@Model.FirstOrDefault(x => x.Division == "Top").Title</h1>
+			<p>@Html.Raw(@Model.FirstOrDefault(x => x.Division == "Top").Description)</p>
+			<a class="btn btn-primary" href=@Model.FirstOrDefault(x => x.Division == "Top").Url  target="_blank">Github repositories</a>
+		</div>
+	</div>
+	<!-- Call to Action-->
+	<div class="card text-white bg-secondary my-5 py-4 text-center">
+		<div class="card-body"><p class="text-white m-0"></p></div>
+	</div>
+	<!-- Content Row-->
+	<div class="row gx-4 gx-lg-5">
+		<!-- card 1-->
+		<div class="col-md-4 mb-5">
+			<div class="card h-100">
+				<div class="card-body">
+				<h2 class="card-title">@Model.FirstOrDefault(x => x.Division == "Card1").Title</h2>
+				<p class="card-text">@Html.Raw(Model.FirstOrDefault(x => x.Division == "Card1").Description)</p>
+				</div>
+			<div class="card-footer"><a class="btn btn-primary btn-sm" href="/Home/About">More Info</a></div>
+			</div>
+		</div>
+		<!-- card 2-->
+		<div class="col-md-4 mb-5">
+			<div class="card h-100">
+				<div class="card-body">
+				<h2 class="card-title">@Model.FirstOrDefault(x => x.Division == "Card2").Title</h2>
+				<p class="card-text">@Html.Raw(Model.FirstOrDefault(x => x.Division == "Card2").Description)</p>
+				</div>
+			<div class="card-footer"><a class="btn btn-primary btn-sm" href="/Home/About">More Info</a></div>
+			</div>
+		</div>
+		<!-- card 3-->
+		<div class="col-md-4 mb-5">
+			<div class="card h-100">
+				<div class="card-body">
+				<h2 class="card-title">@Model.FirstOrDefault(x => x.Division == "Card3").Title</h2>
+				<p class="card-text">@Html.Raw(Model.FirstOrDefault(x => x.Division == "Card3").Description)</p>
+				</div>
+			<div class="card-footer"><a class="btn btn-primary btn-sm" href="/Home/About">More Info</a></div>
+			</div>
+		</div>
+	</div>
+</div>
