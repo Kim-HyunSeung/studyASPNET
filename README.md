@@ -34,13 +34,13 @@
 </div>
 
 
-# studyASPNET
-ASP.NET Core 학습 리포지토리
+<h1><p align="center"> studyASPNET </p></h1>
+<h4><p align="center">ASP.NET Core 학습 리포지토리</p></h4>
 
-## 주소 모음
-[부트스트랩 주소](https://getbootstrap.com/)
 
-[Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)
+## ★도움되는 주소 모음★
+<p align="center">[부트스트랩 주소](https://getbootstrap.com/)</p>
+<p align="center">[Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)</p>
 
 ## 1일차
 1. Git/Github Desktop 설정
