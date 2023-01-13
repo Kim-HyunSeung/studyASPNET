@@ -44,6 +44,10 @@
 <p align="center">[부트스트랩 주소](https://getbootstrap.com/)</p>
 <p align="center">[Lorem ipsum 주소](https://en.wikipedia.org/wiki/Lorem_ipsum)</p>
 
+## 
+<div><img align="right" src ="https://phoneky.co.uk/thumbs/screensavers/down/seasonal/1217063_38teWQ48.gif"></div>
+
+
 ## 1일차
 1. Git/Github Desktop 설정
 2. Visual studio(IDE) 개발 환경 설정
