@@ -8,7 +8,7 @@
 </p>
 <br>
 <p align="center">
-    <img id="preview" src="https://komarev.com/ghpvc/?username=drknzz&color=grey">
+    <img id="preview" src="https://komarev.com/ghpvc/?username=Kim-HyunSeung&color=grey">
 </p>
 <p align="center">
     <a href="https://leetcode.com/Kim-HyunSeung/"><img width="48%" src="https://leetcode.card.workers.dev/Kim-HyunSeung?theme=dark&font=baloo&extension=null&border=2&border_radius=8"></a>
