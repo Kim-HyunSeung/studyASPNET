@@ -46,7 +46,7 @@
 <p align="center">[Stackoverflow 주소](https://stackoverflow.com)</p>
 
 ## 
-<div><img align="right" src ="https://phoneky.co.uk/thumbs/screensavers/down/seasonal/1217063_38teWQ48.gif"></div>
+
 
 
 ## 1일차
